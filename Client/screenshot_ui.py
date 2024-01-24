@@ -1,4 +1,4 @@
-# Form implementation generated from reading ui file 'screenshot.ui'
+# Form implementation generated from reading ui file 'screenshotmp.ui'
 #
 # Created by: PyQt6 UI code generator 6.4.2
 #
@@ -12,9 +12,9 @@ from PyQt6 import QtCore, QtGui, QtWidgets
 class Ui_Dialog_screenshot(object):
     def setupUi(self, dialog_capture):
         dialog_capture.setObjectName("dialog_capture")
-        dialog_capture.setGeometry(QtCore.QRect(0, 0, 510, 382))
+        dialog_capture.setGeometry(QtCore.QRect(0, 0, 650, 500))
         self.layoutWidget = QtWidgets.QWidget(parent=dialog_capture)
-        self.layoutWidget.setGeometry(QtCore.QRect(10, 10, 491, 361))
+        self.layoutWidget.setGeometry(QtCore.QRect(10, 10, 600, 450))
         self.layoutWidget.setObjectName("layoutWidget")
         self.verticalLayout = QtWidgets.QVBoxLayout(self.layoutWidget)
         self.verticalLayout.setContentsMargins(0, 0, 0, 0)

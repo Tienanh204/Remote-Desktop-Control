@@ -1,4 +1,4 @@
-# Form implementation generated from reading ui file 'display.ui'
+# Form implementation generated from reading ui file 'display_tmp.ui'
 #
 # Created by: PyQt6 UI code generator 6.4.2
 #
@@ -12,25 +12,22 @@ from PyQt6 import QtCore, QtGui, QtWidgets
 class Ui_Dialog_thread(object):
     def setupUi(self, dialog_capture):
         dialog_capture.setObjectName("dialog_capture")
-        dialog_capture.setGeometry(QtCore.QRect(0, 0, 510, 382))
-        self.layoutWidget = QtWidgets.QWidget(parent=dialog_capture)
-        self.layoutWidget.setGeometry(QtCore.QRect(10, 10, 491, 361))
-        self.layoutWidget.setObjectName("layoutWidget")
-        self.verticalLayout = QtWidgets.QVBoxLayout(self.layoutWidget)
-        self.verticalLayout.setContentsMargins(0, 0, 0, 0)
-        self.verticalLayout.setObjectName("verticalLayout")
-        self.graphicsView = QtWidgets.QGraphicsView(parent=self.layoutWidget)
-        self.graphicsView.setObjectName("graphicsView")
-        self.verticalLayout.addWidget(self.graphicsView)
-        self.horizontalLayout = QtWidgets.QHBoxLayout()
-        self.horizontalLayout.setObjectName("horizontalLayout")
-        self.pushButton_2 = QtWidgets.QPushButton(parent=self.layoutWidget)
+        dialog_capture.setGeometry(QtCore.QRect(0, 0, 936, 564))
+        self.pushButton_2 = QtWidgets.QPushButton(parent=dialog_capture)
+        self.pushButton_2.setGeometry(QtCore.QRect(150, 520, 261, 31))
         self.pushButton_2.setObjectName("pushButton_2")
-        self.horizontalLayout.addWidget(self.pushButton_2)
-        self.pushButton_3 = QtWidgets.QPushButton(parent=self.layoutWidget)
-        self.pushButton_3.setObjectName("pushButton_3")
-        self.horizontalLayout.addWidget(self.pushButton_3)
-        self.verticalLayout.addLayout(self.horizontalLayout)
+        self.pushButton = QtWidgets.QPushButton(parent=dialog_capture)
+        self.pushButton.setGeometry(QtCore.QRect(510, 520, 251, 31))
+        self.pushButton.setObjectName("pushButton")
+        self.horizontalLayoutWidget = QtWidgets.QWidget(parent=dialog_capture)
+        self.horizontalLayoutWidget.setGeometry(QtCore.QRect(10, 20, 911, 481))
+        self.horizontalLayoutWidget.setObjectName("horizontalLayoutWidget")
+        self.horizontalLayout = QtWidgets.QHBoxLayout(self.horizontalLayoutWidget)
+        self.horizontalLayout.setContentsMargins(0, 0, 0, 0)
+        self.horizontalLayout.setObjectName("horizontalLayout")
+        self.graphicsView = QtWidgets.QGraphicsView(parent=self.horizontalLayoutWidget)
+        self.graphicsView.setObjectName("graphicsView")
+        self.horizontalLayout.addWidget(self.graphicsView)
 
         self.retranslateUi(dialog_capture)
         QtCore.QMetaObject.connectSlotsByName(dialog_capture)
@@ -39,7 +36,7 @@ class Ui_Dialog_thread(object):
         _translate = QtCore.QCoreApplication.translate
         dialog_capture.setWindowTitle(_translate("Dialog_thread", "Dialog"))
         self.pushButton_2.setText(_translate("Dialog_thread", "Capture thread"))
-        self.pushButton_3.setText(_translate("Dialog_thread", "Ok"))
+        self.pushButton.setText(_translate("Dialog_thread", "Ok"))
 
 
 if __name__ == "__main__":

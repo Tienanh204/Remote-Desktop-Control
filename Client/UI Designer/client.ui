@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
  <class>Dialog_client</class>
- <widget class="QDialog" name="dialog_client">
+ <widget class="QDialog" name="Dialog_client">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>200</width>
-    <height>215</height>
+    <width>325</width>
+    <height>323</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,45 +17,24 @@
    <bool>true</bool>
   </property>
   <layout class="QGridLayout" name="gridLayout">
-   <item row="3" column="0">
+   <item row="9" column="0">
     <widget class="QPushButton" name="btn_key">
      <property name="text">
       <string>Keystroke</string>
      </property>
     </widget>
    </item>
-   <item row="5" column="0">
-    <widget class="QPushButton" name="btn_cap">
-     <property name="text">
-      <string>Screenshot</string>
-     </property>
-    </widget>
-   </item>
-   <item row="8" column="0">
-    <widget class="QPushButton" name="btn_exit">
-     <property name="text">
-      <string>Exit</string>
-     </property>
-    </widget>
-   </item>
-   <item row="7" column="0">
+   <item row="10" column="0">
     <widget class="QPushButton" name="btn_shutdown">
      <property name="text">
       <string>Shutdow</string>
      </property>
     </widget>
    </item>
-   <item row="6" column="0">
-    <widget class="QPushButton" name="btn_display">
+   <item row="1" column="0">
+    <widget class="QPushButton" name="btn_file">
      <property name="text">
-      <string>Display</string>
-     </property>
-    </widget>
-   </item>
-   <item row="2" column="0">
-    <widget class="QPushButton" name="btn_app">
-     <property name="text">
-      <string>App running</string>
+      <string>File Transfer</string>
      </property>
     </widget>
    </item>
@@ -82,7 +61,21 @@
        </property>
       </widget>
      </item>
+     <item>
+      <widget class="QPushButton" name="btn_cap">
+       <property name="text">
+        <string>Screenshot</string>
+       </property>
+      </widget>
+     </item>
     </layout>
+   </item>
+   <item row="2" column="0">
+    <widget class="QPushButton" name="btn_display">
+     <property name="text">
+      <string>Display</string>
+     </property>
+    </widget>
    </item>
   </layout>
  </widget>

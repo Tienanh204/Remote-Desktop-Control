@@ -10,10 +10,10 @@ from PyQt6 import QtCore, QtGui, QtWidgets
 
 
 class Ui_Dialog_app(object):
-    def setupUi(self, dialog_app):
-        dialog_app.setObjectName("dialog_app")
-        dialog_app.setGeometry(QtCore.QRect(0, 0, 499, 464))
-        self.layoutWidget_2 = QtWidgets.QWidget(parent=dialog_app)
+    def setupUi(self, Dialog):
+        Dialog.setObjectName("Dialog")
+        Dialog.setGeometry(QtCore.QRect(0, 0, 499, 464))
+        self.layoutWidget_2 = QtWidgets.QWidget(parent=Dialog)
         self.layoutWidget_2.setGeometry(QtCore.QRect(10, 10, 481, 441))
         self.layoutWidget_2.setObjectName("layoutWidget_2")
         self.gridLayout_2 = QtWidgets.QGridLayout(self.layoutWidget_2)
@@ -41,12 +41,12 @@ class Ui_Dialog_app(object):
         self.tableWidget.setRowCount(0)
         self.gridLayout_2.addWidget(self.tableWidget, 1, 0, 1, 1)
 
-        self.retranslateUi(dialog_app)
-        QtCore.QMetaObject.connectSlotsByName(dialog_app)
+        self.retranslateUi(Dialog)
+        QtCore.QMetaObject.connectSlotsByName(Dialog)
 
-    def retranslateUi(self, dialog_app):
+    def retranslateUi(self, Dialog):
         _translate = QtCore.QCoreApplication.translate
-        dialog_app.setWindowTitle(_translate("Dialog_app", "Dialog"))
+        Dialog.setWindowTitle(_translate("Dialog_app", "Dialog"))
         self.btn_kill.setText(_translate("Dialog_app", "Kill"))
         self.btn_xem.setText(_translate("Dialog_app", "Xem"))
         self.btn_xoa.setText(_translate("Dialog_app", "Xóa"))
@@ -56,8 +56,8 @@ class Ui_Dialog_app(object):
 if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
-    dialog_app = QtWidgets.QDialog()
+    Dialog = QtWidgets.QDialog()
     ui = Ui_Dialog_app()
-    ui.setupUi(dialog_app)
-    dialog_app.show()
+    ui.setupUi(Dialog)
+    Dialog.show()
     sys.exit(app.exec())
